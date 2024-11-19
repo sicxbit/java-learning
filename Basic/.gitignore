@@ -1,3 +1,4 @@
 .idea
 
-Helloworld.class
+#ensuring class files are ignored
+*.class
