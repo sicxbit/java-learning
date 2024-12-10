@@ -22,12 +22,19 @@ import java.util.Scanner;
 class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        // start coding here
-        int number = scanner.nextInt();
-        int largestNumber = 0;
-        while ( number > largestNumber) {
-            largestNumber = number;
+        int largestNumber = 0; 
+        int number;
+
+        while (true) {
+            number = scanner.nextInt();
+            if (number <= 0) {
+                break; 
+            }
+            if (number > largestNumber) {
+                largestNumber = number; 
+            }
         }
+
         System.out.println(largestNumber);
     }
 }
